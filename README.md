@@ -1,4 +1,3 @@
-
 # Spam Detector REST API
 
 A production-ready REST API built with **Node.js**, **Express.js**, and **Sequelize ORM** using **MySQL** to help users detect spam numbers and search contact info by phone or name.
@@ -21,8 +20,8 @@ A production-ready REST API built with **Node.js**, **Express.js**, and **Sequel
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/VENRATHOD/spam-detector-api.git
-cd spam-detector-api
+git clone https://github.com/SHYPATIL/REST-api.git
+cd REST-api
 ```
 
 ### 2. Install Dependencies
@@ -43,7 +42,7 @@ npm install
 PORT=5000
 DB_NAME=spamdb
 DB_USER=root
-DB_PASSWORD=Ven$2003
+DB_PASSWORD=Shy#2002
 DB_HOST=localhost
 DB_PORT=3306
 JWT_SECRET=your_jwt_secret_key
@@ -92,10 +91,10 @@ Server will run at:
 **Body:**
 ```json
 {
-  "name": "VENRATHOD",
-  "phone": "8310396966",
-  "email": "rathodvenky538@gmail.com",
-  "password": "Ven$2003"
+  "name": "SHYPATIL",
+  "phone": "9742256134",
+  "email": "PATILS3427@gmail.com",
+  "password": "Shy#2002"
 }
 ```
 
@@ -107,8 +106,8 @@ Server will run at:
 **Body:**
 ```json
 {
-  "phone": "8310396966",
-  "password": "Ven$2003"
+  "phone": "9742256134",
+  "password": "Shy#2002"
 }
 ```
 
@@ -126,7 +125,7 @@ Authorization: Bearer <your_token>
 **Body:**
 ```json
 {
-  "phone": "8310396966"
+  "phone": "9742256134"
 }
 ```
 
@@ -134,7 +133,7 @@ Authorization: Bearer <your_token>
 
 ###  4. Search by Name
 
-**GET** `/api/spam/search-by-name?name=neh`  
+**GET** `/api/spam/search-by-name?name=shy`  
 **Headers:**
 ```
 Authorization: Bearer <your_token>
@@ -144,7 +143,7 @@ Authorization: Bearer <your_token>
 
 ###  5. Search by Phone
 
-**GET** `/api/spam/search-by-phone?phone=8310396966`  
+**GET** `/api/spam/search-by-phone?phone=9742256134`  
 **Headers:**
 ```
 Authorization: Bearer <your_token>
